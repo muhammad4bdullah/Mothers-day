@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Mother's Day ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:linear-gradient(135deg,#ffd6e7,#fff0f5,#ffe8cc);
+  overflow-x:hidden;
+  color:#333;
+}
+
+.container{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px;
+  position:relative;
+}
+
+h1{
+  font-size:4rem;
+  color:#ff4f81;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  font-size:1.2rem;
+  max-width:700px;
+  line-height:1.8;
+  margin-bottom:35px;
+}
+
+/* 🌸 FLOWERS ONLY */
+.flower{
+  position:fixed;
+  top:-10px;
+  font-size:18px;
+  animation:fall linear infinite;
+  opacity:0.7;
+  z-index:0;
+}
+
+@keyframes fall{
+  0%{transform:translateY(-10vh) rotate(0deg);}
+  100%{transform:translateY(110vh) rotate(360deg);}
+}
+
+/* IMAGE GRID */
+.image-grid{
+  margin-bottom:45px;
+  width:100%;
+  max-width:1000px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.img-card{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  border-radius:30px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+  transition:0.4s ease;
+}
+
+.img-card:hover{
+  transform:scale(1.05);
+}
+
+/* 🎴 PENTAGON STYLE (FIXED CONTENT VISIBILITY) */
+.cards-top{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  width:100%;
+  max-width:900px;
+  margin-top:20px;
+}
+
+.cards-bottom{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  width:100%;
+  max-width:650px;
+  margin-top:15px;
+}
+
+/* BASE CARD */
+.card{
+  padding:25px;
+  border-radius:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
+  transition:0.4s;
+  flex:1;
+}
+
+.card:hover{
+  transform:scale(1.07);
+}
+
+/* 🌟 INDIVIDUAL CARD STYLES */
+.love{
+  background:linear-gradient(135deg,#fff,#ffe4ec);
+  transform:translateY(-10px);
+}
+
+.care{
+  background:linear-gradient(135deg,#fff,#e6f7ff);
+  transform:rotate(-2deg);
+}
+
+.hero{
+  background:linear-gradient(135deg,#fff,#eaffea);
+  transform:rotate(2deg);
+}
+
+.urdu{
+  background:linear-gradient(135deg,#fff,#fff3e6);
+  transform:translateX(-10px);
+}
+
+.english{
+  background:linear-gradient(135deg,#fff,#f5e6ff);
+  transform:translateX(10px);
+}
+
+/* TEXT INSIDE CARDS */
+.card h2{
+  margin-bottom:10px;
+  color:#ff4f81;
+  font-size:1.3rem;
+}
+
+.card p{
+  font-size:1rem;
+  line-height:1.6;
+}
+
+/* BUTTON */
+button{
+  margin-top:40px;
+  border:none;
+  background:#ff4f81;
+  color:white;
+  padding:16px 35px;
+  font-size:1rem;
+  border-radius:50px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.08);
+}
+
+/* POPUP */
+.popup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  pointer-events:none;
+  transition:0.3s;
+}
+
+.popup.active{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.popup-box{
+  background:white;
+  padding:40px;
+  border-radius:25px;
+  max-width:600px;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy Mother’s Day ❤️</h1>
+
+<p class="subtitle">
+Dear <strong>Mom Jani</strong> , thank you for everything you do for me every day.<br><br>
+— Muhammad Abdullah ❤️
+</p>
+
+<!-- IMAGES -->
+<div class="image-grid">
+  <img class="img-card" src="https://images.unsplash.com/photo-1517457373958-b7bded4587205">
+  <img class="img-card" src="https://images.unsplash.com/photo-1519340241574-2cec6aef10c01">
+  <img class="img-card" src="https://images.unsplash.com/photo-1494790108377-be9c29b239330">
+</div>
+
+<!-- 🎴 PENTAGON CARDS (CONTENT FIXED) -->
+<div class="cards-top">
+  <div class="card love">
+    <h2>💖 LOVE</h2>
+    <p>Your love is the strongest feeling in my life. It protects me like nothing else.</p>
+  </div>
+
+  <div class="card care">
+    <h2>🌸 CARE</h2>
+    <p>You always care for me even when I don’t deserve it. That is your true strength.</p>
+  </div>
+
+  <div class="card hero">
+    <h2>✨ HERO</h2>
+    <p>You are my real life hero. No cape, just endless sacrifices and prayers.</p>
+  </div>
+</div>
+
+<div class="cards-bottom">
+  <div class="card urdu">
+    <h2>🌙 URDU SHAYARI</h2>
+    <p>ماں کی دعا وہ روشنی ہے<br>جو اندھیروں کو بھی روشن کر دے</p>
+  </div>
+
+  <div class="card english">
+    <h2>🕊 ENGLISH POETRY</h2>
+    <p>A mother’s love never fades,<br>it guides, it heals, it stays.</p>
+  </div>
+</div>
+
+<button onclick="openPopup()">Click For A Surprise 🎁</button>
+
+</div>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+  <div class="popup-box">
+    <h2>I Love You Mom ❤️</h2>
+    <p id="typeText"></p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<script>
+const message = `Thank you for everything you do for me every day. I try my best to show my love for you, but no words or actions will ever be enough to match the love you give me every single day.\n\nHappy Mother’s Day 🌷\n\n— Muhammad Abdullah`;
+
+function openPopup(){
+  document.getElementById("popup").classList.add("active");
+  let i = 0;
+  const el = document.getElementById("typeText");
+  el.innerHTML = "";
+
+  function type(){
+    if(i < message.length){
+      el.innerHTML += message.charAt(i);
+      i++;
+      setTimeout(type, 25);
+    }
+  }
+
+  type();
+}
+
+function closePopup(){
+  document.getElementById("popup").classList.remove("active");
+}
+
+/* 🌸 FLOWERS ONLY */
+for(let i=0;i<25;i++){
+  const f=document.createElement("div");
+  f.className="flower";
+  f.innerHTML="🌸";
+  f.style.left=Math.random()*100+"vw";
+  f.style.fontSize=(Math.random()*20+10)+"px";
+  f.style.animationDuration=(Math.random()*5+5)+"s";
+  document.body.appendChild(f);
+}
+</script>
+
+</body>
+</html>
